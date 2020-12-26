@@ -14,13 +14,13 @@
         <div id="navbarMenuHeroC" class="navbar-menu">
           <div class="navbar-end">
             <nuxt-link class="navbar-item" to="/blog" prefetch>
-              Blog
+              Blog Posts
             </nuxt-link>
             <nuxt-link class="navbar-item" to="/about">
-              About
+              About Me
             </nuxt-link>
             <nuxt-link class="navbar-item" to="/contact">
-              Contact
+              Contact Me
             </nuxt-link>
 
             <span class="navbar-item">

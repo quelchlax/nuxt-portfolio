@@ -4,18 +4,17 @@
       <div class="container">
         <ul>
           <li><nuxt-link to="/">Welcome</nuxt-link></li>
-          <li><nuxt-link to="/about">About</nuxt-link></li>
-          <li><nuxt-link to="/blog">Blog</nuxt-link></li>
-          <li><nuxt-link to="/contact">Contact</nuxt-link></li>
+          <li><nuxt-link to="/about">About Me</nuxt-link></li>
+          <li><nuxt-link to="/blog">Blog Posts</nuxt-link></li>
+          <li><nuxt-link to="/contact">Contact Me</nuxt-link></li>
           <li>
             <a
-              target="_blank"
               href="https://marketplace.visualstudio.com/items?itemName=ericquelch.perty"
               >Perty</a
             >
           </li>
           <li>
-            <a target="_blank" href="https://github.com/quelchlax">My Github</a>
+            <a href="https://github.com/quelchlax">My Github</a>
           </li>
         </ul>
       </div>

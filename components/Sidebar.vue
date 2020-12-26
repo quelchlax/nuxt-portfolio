@@ -29,12 +29,12 @@
         </p>
         <ul class="menu-list">
           <li>
-            <a href="https://github.com/quelchlax" target="_blank">
+            <a href="https://github.com/quelchlax">
               Github
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/quelchlax" target="_blank">
+            <a href="https://twitter.com/quelchlax">
               Twitter
             </a>
           </li>
@@ -46,7 +46,6 @@
           <li>
             <a
               href="https://marketplace.visualstudio.com/items?itemName=ericquelch.perty"
-              target="_blank"
             >
               Perty
             </a>
