@@ -9,11 +9,14 @@
           <li><nuxt-link to="/contact">Contact</nuxt-link></li>
           <li>
             <a
+              target="_blank"
               href="https://marketplace.visualstudio.com/items?itemName=ericquelch.perty"
               >Perty</a
             >
           </li>
-          <li><a href="https://github.com/quelchlax">My Github</a></li>
+          <li>
+            <a target="_blank" href="https://github.com/quelchlax">My Github</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -22,7 +25,7 @@
 
 <script>
 export default {
-  name: "Footer",
+  name: "Footer"
 };
 </script>
 

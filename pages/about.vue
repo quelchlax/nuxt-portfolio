@@ -13,7 +13,9 @@
           <div>
             <h3 class="heading post-category">Web Development Student</h3>
             <h2 class="subtitle">Eric Quelch</h2>
-            <h1 class="title post-title">Full Stack Javascript Developer (In Training)</h1>
+            <h1 class="title post-title">
+              Full Stack Javascript Developer (In Training)
+            </h1>
             <p>
               Hello and thanks for dropping by. My name is Eric Quelch and I
               have been programming for almost 2 years now. I am currently a
@@ -29,7 +31,11 @@
               games and various tools and applications.
             </p>
             <br />
-            <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" class="button is-warning">Javascript Courses</a>
+            <a
+              href="https://www.udemy.com/course/the-web-developer-bootcamp/"
+              class="button is-warning"
+              >Javascript Courses</a
+            >
           </div>
         </div>
       </article>
@@ -39,10 +45,11 @@
       <div class="content">
         <p>
           Here is a little information based off my stack:
-          <br>
-          I use VSCode for my editor, Pop!_OS for my OS, and GitHub to manage my source code.
-          When it comes to managing the front end I use Vue.js or Nuxt.js with Bulma. To manage my backend 
-          I use MongoDB or Firebase with Node.js.
+          <br />
+          I use VSCode for my editor, Pop!_OS for my OS, and GitHub to manage my
+          source code. When it comes to managing the front end I use Vue.js or
+          Nuxt.js with Bulma. To manage my backend I use MongoDB or Firebase
+          with Node.js.
         </p>
       </div>
     </div>
@@ -164,7 +171,4 @@
 export default {};
 </script>
 
-<style>
-
-
-</style>
+<style></style>

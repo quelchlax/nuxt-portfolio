@@ -3,7 +3,11 @@
     <div class="columns is-vcentered">
       <div class="column is-5">
         <figure class="image is-square">
-          <img class='is-rounded' src="https://avatars0.githubusercontent.com/u/74473426?s=460&v=4" alt="Description" />
+          <img
+            class="is-rounded"
+            src="https://avatars0.githubusercontent.com/u/74473426?s=460&v=4"
+            alt="Description"
+          />
         </figure>
       </div>
       <div class="column is-6 is-offset-1">

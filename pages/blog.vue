@@ -24,7 +24,7 @@
                   </div>
                   <div class="column is-5 featured-content va">
                     <div>
-                      <h3 class="heading post-category">{{doc.category}}</h3>
+                      <h3 class="heading post-category">{{ doc.category }}</h3>
                       <h1 class="title post-title">{{ doc.title }}</h1>
                       <p class="post-excerpt">
                         {{ doc.snippet }}
@@ -52,7 +52,7 @@ export default {
       .sortBy("title")
       .fetch();
     return { docs };
-  },
+  }
 };
 </script>
 
