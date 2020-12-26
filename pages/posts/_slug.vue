@@ -1,10 +1,8 @@
 <template>
   <section>
-    <div class="container is-fluid">
-      <h1 class="title">{{doc.title}}</h1>
-      <h2 class="subtitle">Published: {{date}}</h2>
-      <nuxt-content :document="doc"/>
-    </div>
+    <h1 class="title">{{ doc.title }}</h1>
+    <h2 class="subtitle">Published: {{ date }}</h2>
+    <nuxt-content class="mobile" :document="doc" />
 
     <div class="content has-text-centered mt-6 pt-6">
       <button class="button is-link is-light" v-if="prev">
@@ -26,12 +24,18 @@ export default {
       .sortBy("title", "asc")
       .surround(params.slug, { before: 1, after: 1 })
       .fetch();
-    const date = new Date(doc.createdAt).toDateString()
-    return { doc, prev, next, date};
+    const date = new Date(doc.createdAt).toDateString();
+    return { doc, prev, next, date };
   }
 };
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+@media screen and (max-width: 480px) {
+  .mobile {
+    max-width: 275px;
+    margin: 0;
+    padding: 0;
+  }
+}
 </style>

@@ -19,7 +19,7 @@
                     <img
                       :src="doc.avatar"
                       :alt="doc.avatar"
-                      style="width: 512px; height: 512px"
+                      class="post-image"
                     />
                   </div>
                   <div class="column is-5 featured-content va">
@@ -30,9 +30,11 @@
                         {{ doc.snippet }}
                       </p>
                       <br />
-                      <nuxt-link class="button is-link mt-4" :to="doc.path">
-                        Read More
-                      </nuxt-link>
+                      <div class="is-mobile">
+                        <nuxt-link class="button is-link mt-4" :to="doc.path">
+                          Read More
+                        </nuxt-link>
+                      </div>
                     </div>
                   </div>
                 </article>
@@ -56,4 +58,20 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+.post-image {
+  width: 468px;
+  height: 468px;
+}
+
+@media screen and (max-width: 400px) {
+  .post-image {
+    height: 50%;
+    background-position: center;
+  }
+
+  .is-mobile {
+    text-align: center;
+  }
+}
+</style>
