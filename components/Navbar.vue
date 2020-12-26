@@ -24,9 +24,10 @@
             </nuxt-link>
 
             <span class="navbar-item">
-              <a href="https://github.com/quelchlax" class="button is-primary"
-                >My Github</a
-              >
+              <a href="https://github.com/quelchlax" class="button is-github">
+                <img src="./../static/icons/github.svg" class="mr-1 ml-1" alt="">
+                <span class="mr-1 ml-1 my-github">My Github</span>
+              </a>
             </span>
           </div>
         </div>
@@ -45,4 +46,6 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+</style>

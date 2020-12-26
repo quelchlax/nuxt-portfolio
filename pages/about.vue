@@ -1,92 +1,170 @@
 <template>
-  <section class="container">
-      <div class="box">
-        <h1 class="title pt-1 pb-1">Hello World</h1>
-        <h2 class="subtitle mb-2">
-          Im Eric, and I have been programming and developing for almost 2 years
-          now. I am a huge fan of Vue.js and Nuxt.js and they have spent a lot
-          of time developing small applications with those frameworks.
-        </h2>
+  <div class="container">
+    <div class="columns is-vcentered">
+      <article class="columns featured">
+        <div class="column is-5 post-img ">
+          <img
+            src="../static/images/js.png"
+            class="hero-image"
+            alt="javascript-logo"
+          />
+        </div>
+        <div class="column is-7 featured-content">
+          <div>
+            <h3 class="heading post-category">Web Development Student</h3>
+            <h2 class="subtitle">Eric Quelch</h2>
+            <h1 class="title post-title">Full Stack Javascript Developer (In Training)</h1>
+            <p>
+              Hello and thanks for dropping by. My name is Eric Quelch and I
+              have been programming for almost 2 years now. I am currently a
+              student at Fanshawe College, hoping to finish with top notch
+              grades and eventually gain employment.
+            </p>
+            <p class="mt-2">
+              I am very passionate about developing, programming and designing
+              various web based applications. I absolutly love what I do and am
+              always trying to learn and develop new skills. Javascript is my
+              primary programming language of choice for the front and back end.
+              I also have experience with Java, Python and C# to building small
+              games and various tools and applications.
+            </p>
+            <br />
+            <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" class="button is-warning">Javascript Courses</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="section">
+      <h2 class="title">About My Current Stack</h2>
+      <div class="content">
         <p>
-          I am very passionate about coding, designing and programming various things.
-          I have spent a lot of time perfecting my craft and am very dedicated to what I do.
+          Here is a little information based off my stack:
+          <br>
+          I use VSCode for my editor, Pop!_OS for my OS, and GitHub to manage my source code.
+          When it comes to managing the front end I use Vue.js or Nuxt.js with Bulma. To manage my backend 
+          I use MongoDB or Firebase with Node.js.
         </p>
       </div>
-      <div class="box">
-        <h1 class="title pt-1 pb-1">My Setup</h1>
-        <div class="content">
-          <ul>
-            <li><strong>AMD Athlon 3000G Mini ITX PC with Pop!_OS 20.04 LTS</strong></li>
-            <p>
-              This little CPU might seem underpowered but it really gets the job done on a budget
-            </p>
-
-            <li><strong>Lenovo Legion i7-9750H Laptop with Pop!_OS 20.04 LTS with Windows 10 Pro Edition dual boot</strong></li>
-            <p>
-              Every developer needs a good laptop!
-            </p>
-
-            <li><strong>Visual Studio Code with Perty UI Theme</strong></li>
-            <p>
-              I could list many positive things about Visual Studio Code. I recommend checking out this
-              editor theme called Perty <a href="#">here</a>
-            </p>
-
-            <li><strong>Vue.js and Nuxt.js Javascript frameworks for front-end development</strong></li>
-            <p>
-              Really easy to learn and pick up, Vue.js and Nuxt.js are my absolute favorite frameworks to use
-              for developing my front-end solutions. I really enjoy the approach Vue.js takes
-              and the community based approach it takes. Something about this framework drew me in, and I have spent
-              majority of my time using them. Shout outs to React and Svelte!
-            </p>
-
-            <li><strong>Bulma and Buefy with some Sass for styling components and content</strong></li>
-            <p>
-              I originally started out using Bootstrap to mock up little components I wanted to make,
-              or to primarily style all my content. Over time I stumbled upon Bulma and fell in love with it simplicity.
-              Spending a lot of time working and reading the Bulma documents I prefer it over other CSS frameworks.
-              If your developing with Vue I recommend checking out a Buefy it's based off Bulma!
-            </p>
-
-            <li><strong>A little Node.js, some Express paired with MongoDB or good old Firebase</strong></li>
-            <p>
-              For the back-end I prefer using Javascript for everything if I can.
-              I originally went to College for general computer programming and learned a lot of Java and Python in the past.
-              When it comes to designing my personal projects I prefer Javascript for everything.
-              I have spent a lot of time making small applications using MongoDB and Google's Firebase and 
-              can't find anything bad to say about those services and documentation that is availible to learn.
-            </p>
-
-            <li><strong>When it comes to deploying applications, check Netlify, Vercel and Heroku</strong></li>
-            <p>
-              They're tonns of different methods to deploying an application, website, whatever it might be.
-              At this time being I enjoy messing around with Netlify, Vercel and Heroku. 
-            </p>
-
-            <li><strong>Version and Source control, Git and Github</strong></li>
-            <p>
-              I honestly don't think I could live without. Prefer Github over
-              Bitbucket and Gitlab, just a personal prefernce
-            </p>
-
-            <li><strong>Linux and Pop!_OS for everything</strong></li>
-            <p>
-              Spending the last 2 years using different distribution versions of Linux
-              such as: Fedora, Ubuntu, Arch, Manjaro and many others I find Pop!_OS to 
-              have everything I need to get the jobs done. Its super easy to get installed 
-              and running, requires minimal effort to setup and is stable. Stability is import to me when
-              I am working.
-            </p>
-          </ul>
+    </div>
+    <div class="columns is-vcentered mt-5">
+      <div class="columns is-multiline">
+        <div class="column post is-6">
+          <article class="columns is-multiline">
+            <div class="column is-12 post-img">
+              <img src="../static/images/pertyui.png" alt="perty-ui-theme" />
+            </div>
+            <div class="column is-12 featured-content ">
+              <h3 class="heading post-category">Perty Theme For VSCode</h3>
+              <h1 class="title post-title">Need A Dark Theme For VSCode?</h1>
+              <p class="post-excerpt">
+                Looking for a dark theme for VSCode? Here is a GitHub based
+                theme for your VSCode editor that I made.
+              </p>
+              <br />
+              <a href="#" class="button is-dark">Perty Theme VSCode</a>
+            </div>
+          </article>
+        </div>
+        <div class="column post is-6">
+          <article class="columns is-multiline">
+            <div class="column is-12 post-img">
+              <img src="../static/images/github.png" alt="github" />
+            </div>
+            <div class="column is-12 featured-content ">
+              <h3 class="heading post-category">Git and GitHub</h3>
+              <h1 class="title post-title">
+                Check Out Some Of My Repositories
+              </h1>
+              <p class="post-excerpt">
+                I post a lot of example code and guides on my GitHub. If your
+                new to web development or programming, it might be worth while
+                to check out some repositories I have.
+              </p>
+              <br />
+              <div class="has-text-centered">
+                <a href="#" class="button is-github">Visit My Github</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="column post is-4">
+          <article class="columns is-multiline">
+            <div class="column is-12 post-img">
+              <img src="../static/images/nuxt.png" alt="vuejs" />
+            </div>
+            <div class="column is-12 featured-content ">
+              <h3 class="heading post-category">Nuxt.JS</h3>
+              <h1 class="title post-title">My Personal Framework Of Choice</h1>
+              <p class="post-excerpt">
+                Based off Vue.JS, Nuxt by far is my favorite framework. It's
+                very powerful and simple to use, and can do more than build
+                static sites. Server side rendering, single page applications,
+                static or universal deployments, tonns of built in features and
+                tools. I could go on about Nuxt.js.
+              </p>
+              <br />
+              <div class="has-text-centered">
+                <a href="#" class="button is-nuxt">Nuxt.js Documents</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="column post is-4">
+          <article class="columns is-multiline">
+            <div class="column is-12 post-img">
+              <img src="../static/images/vue.png" alt="Featured Image" />
+            </div>
+            <div class="column is-12 featured-content ">
+              <h3 class="heading post-category">Vue.JS</h3>
+              <h1 class="title post-title">Vue Needs More Love</h1>
+              <p class="post-excerpt">
+                When I first started to learn more about frameworks and which
+                one to choose, I started with React. Over time I began to learn
+                bits of other frameworks such as Angular, Svelte then I found
+                Vue. Something about this framework stuck to me; I find it very
+                simple to approach, learn and get going. I have been using
+                Vue.js to build small applications and even part of this site
+                using Vue.js and Nuxt.js
+              </p>
+              <br />
+              <div class="has-text-centered">
+                <a href="#" class="button is-vue">Vue.js Documents</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="column post is-4">
+          <article class="columns is-multiline">
+            <div class="column is-12 post-img">
+              <img src="../static/images/bulma.png" alt="Featured Image" />
+            </div>
+            <div class="column is-12 featured-content ">
+              <h3 class="heading post-category">Bulma</h3>
+              <h1 class="title post-title">Bulma is Simple and Gorgeous</h1>
+              <p class="post-excerpt">
+                Coming from Bootstrap I stumbled across Bulma and fell in love.
+                I really recommend anyone who is new to development or even an
+                established developer to check out Bulma. After a few weeks of
+                building some small things and components using Bulma I find it
+                almost becomes fluient.
+              </p>
+              <br />
+              <div class="has-text-centered">
+                <a href="#" class="button is-bulma">Read More</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-  </section>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {
-
-};
+export default {};
 </script>
 
-<style></style>
+<style>
+
+
+</style>

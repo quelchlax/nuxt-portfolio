@@ -30,7 +30,39 @@ export default {
 
 <style lang="scss">
 .nuxt-link-exact-active {
-  color: #0fb85a;
-  border-bottom: 1px solid #0fb85a;
+  color: #6c44c4;
+  border-bottom: 1px solid #6c44c4;
+  background-color: #00877525;
+}
+
+.is-github {
+  &:hover {
+    color: rgb(253, 191, 75);
+  }
+}
+
+.hero-image {
+  height: 512px;
+  width: 512px;
+}
+
+.is-github {
+  background-color: #6c44c4;
+  color: white;
+}
+
+.is-bulma {
+  background-color: #00d0b3 ;
+  color: white;
+}
+
+.is-vue {
+  background-color: #5b7e8b;
+  color: white;
+}
+
+.is-nuxt {
+  background-color: #008776;
+  color: white;
 }
 </style>

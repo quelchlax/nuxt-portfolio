@@ -1,0 +1,1 @@
+Made using Nuxt Content <a>https://content.nuxtjs.org/</a>

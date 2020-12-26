@@ -11,14 +11,13 @@
           Hi, im Eric
         </h1>
         <h2 class="subtitle is-4">
-          Full Stack Javascript Developer
+          Full Stack Javascript Developer + Student Fanshawe College
         </h2>
-        <br />
-        <p class="has-text-centered">
-          <nuxt-link to="/blog" class="button is-medium is-info is-outlined">
+        <div class="has-text-centered">
+          <nuxt-link to="/about" class="button is-medium is-info is-outlined">
             Learn more
           </nuxt-link>
-        </p>
+        </div>
       </div>
     </div>
   </div>

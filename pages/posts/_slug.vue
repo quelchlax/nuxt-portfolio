@@ -1,7 +1,9 @@
 <template>
   <section>
-    <div class="container">
-      <nuxt-content :document="doc" />
+    <div class="container is-fluid">
+      <h1 class="title">{{doc.title}}</h1>
+      <h2 class="subtitle">Published: {{date}}</h2>
+      <nuxt-content :document="doc"/>
     </div>
 
     <div class="content has-text-centered mt-6 pt-6">
@@ -24,7 +26,8 @@ export default {
       .sortBy("title", "asc")
       .surround(params.slug, { before: 1, after: 1 })
       .fetch();
-    return { doc, prev, next };
+    const date = new Date(doc.createdAt).toDateString()
+    return { doc, prev, next, date};
   }
 };
 </script>
