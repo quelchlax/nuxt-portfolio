@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: "Menubar"
+  name: "Hamburger"
 };
 </script>
 

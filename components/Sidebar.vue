@@ -10,12 +10,7 @@
         <ul class="menu-list" @click="$emit('close')">
           <li>
             <nuxt-link to="/blog">
-              Blog
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/about">
-              About
+              Articles
             </nuxt-link>
           </li>
           <li>

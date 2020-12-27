@@ -1,6 +1,7 @@
 <template>
-  <div class="container has-text-centered">
-    <div class="columns is-vcentered">
+<section class="hero is-fullheight">
+   <div class="hero-body container has-text-centered">
+    <div class="columns">
       <div class="column is-two-thirds has-text-left">
         <h1 class="title is-1">Contact Me</h1>
         <p class="is-size-4">
@@ -94,6 +95,8 @@
       </div>
     </div>
   </div>
+</section>
+ 
 </template>
 
 <script>

@@ -1,35 +1,21 @@
 <template>
-  <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
-      <div class="container">
-        <ul>
-          <li><nuxt-link to="/">Welcome</nuxt-link></li>
-          <li><nuxt-link to="/about">About Me</nuxt-link></li>
-          <li><nuxt-link to="/blog">Blog Posts</nuxt-link></li>
-          <li><nuxt-link to="/contact">Contact Me</nuxt-link></li>
-          <li>
-            <a
-              href="https://marketplace.visualstudio.com/items?itemName=ericquelch.perty"
-              >Perty</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/quelchlax">My Github</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
   </div>
+</footer>
 </template>
 
 <script>
 export default {
-  name: "Footer"
-};
+  name: 'Footer'
+}
 </script>
 
-<style lang="scss">
-.hero-foot strong {
-  color: #008cf6;
-}
+<style>
+
 </style>

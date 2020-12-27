@@ -1,4 +1,6 @@
 <template>
+<div class="hero is-fullheight is-mobile">
+  <div class="hero-body">
   <section class="container">
     <div class="section">
       <h1 class="title">Blogs, Articles and Guides by Quelchlax</h1>
@@ -45,6 +47,8 @@
       </section>
     </div>
   </section>
+  </div>
+</div>
 </template>
 
 <script>
@@ -64,7 +68,8 @@ export default {
   height: 468px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+  
   .post-image {
     height: 50%;
     background-position: center;

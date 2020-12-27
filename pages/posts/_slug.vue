@@ -1,8 +1,9 @@
 <template>
-  <section>
+  <section class="container is-fluid mobile">
     <h1 class="title">{{ doc.title }}</h1>
     <h2 class="subtitle">Published: {{ date }}</h2>
-    <nuxt-content class="mobile" :document="doc" />
+    <nuxt-content class="" :document="doc" />
+
 
     <div class="content has-text-centered mt-6 pt-6">
       <button class="button is-link is-light" v-if="prev">
@@ -31,11 +32,14 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
   .mobile {
-    max-width: 275px;
-    margin: 0;
-    padding: 0;
+    max-width: 300px;
+    word-wrap:break-word;
+
+    * {
+      font-size: 14px;
+    }
   }
 }
 </style>
