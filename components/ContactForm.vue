@@ -1,5 +1,5 @@
 <template>
-  <form name="contact" class="mt-2" netlify>
+  <form name="contact" method="post" netlify-honeypot='bot-field' class="mt-2" netlify>
     <div class="field">
       <label class="label">Name</label>
       <div class="control">
