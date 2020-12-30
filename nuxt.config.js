@@ -32,6 +32,11 @@ export default {
     '@nuxtjs/pwa',
     '@nuxt/content',
   ],
+  pwa: {
+    icon: {
+      iconFileName: process.env.NODE_ENV==='staging' ? 'logo.png': 'favicon.ico'
+    }
+  },
   build: {
     postcss: {
       preset: {

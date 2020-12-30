@@ -13,9 +13,9 @@
       <div class="content has-text-centered">
         <p>
           <strong>http://quelchlax.tech</strong> made by
-          <a href="https://github.com/quelchlax">Eric Quelch</a>. 
+          <a href="https://github.com/quelchlax">Eric Quelch</a>.
         </p>
-          <!-- <button class="button is-link">Buy Me A Coffee</button> -->
+        <!-- <button class="button is-link">Buy Me A Coffee</button> -->
       </div>
     </footer>
   </main>
@@ -37,4 +37,29 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+@media all and (max-width: 796px) {
+  .--mobile {
+    text-align: center;
+  }
+}
+
+.--rounded {
+  border-radius: 30px;
+}
+
+.is-github {
+  background-color: #6c44c4;
+  color: white;
+}
+
+.is-nuxt {
+  background-color: #5b7e8b;
+  color: white;
+}
+
+.is-vue {
+  background-color: #008776;
+  color: white;
+}
+</style>

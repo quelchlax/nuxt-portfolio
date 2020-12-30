@@ -8,7 +8,7 @@
               <figure class="image is-square">
                 <img
                   class="is-rounded"
-                  src="https://avatars0.githubusercontent.com/u/74473426?s=460&v=4"
+                  src="https://cdn1.iconfinder.com/data/icons/data-science-1-1/512/20-512.png"
                   alt="Description"
                 />
               </figure>
@@ -18,16 +18,13 @@
                 Hi, im Eric
               </h1>
               <h2 class="subtitle is-4">
-                Full Stack Javascript Developer + Student Fanshawe College
+                Full Stack Javascript Developer and Web Development Student at
+                Fanshawe College
               </h2>
-              <div class="has-text-centered">
-                <nuxt-link
-                  to="/about"
-                  class="button is-medium is-info is-outlined"
-                >
-                  Learn more
-                </nuxt-link>
-              </div>
+
+              <ProgressBar />
+
+             
             </div>
           </div>
         </div>
@@ -37,7 +34,7 @@
               <div class="column is-5 post-img ">
                 <img
                   src="../static/images/js.png"
-                  class="hero-image"
+                  class="hero-image --rounded"
                   alt="javascript-logo"
                   width="400px"
                   height="400px"
@@ -48,7 +45,7 @@
                   <h3 class="heading post-category">Web Development Student</h3>
                   <h2 class="subtitle">Eric Quelch</h2>
                   <h1 class="title post-title">
-                    Full Stack Javascript Developer (In Training)
+                    About Me
                   </h1>
                   <p>
                     Hello and thanks for dropping by. My name is Eric Quelch and
@@ -59,18 +56,20 @@
                   <p class="mt-2">
                     I am very passionate about developing, programming and
                     designing various web based applications. I absolutly love
-                    what I do and am always trying to learn and develop new
+                    what I do. I am always trying to learn, and develop new
                     skills. Javascript is my primary programming language of
                     choice for the front and back end. I also have experience
                     with Java, Python and C# to building small games and various
                     tools and applications.
                   </p>
                   <br />
-                  <a
-                    href="https://www.udemy.com/course/the-web-developer-bootcamp/"
-                    class="button is-warning"
-                    >Javascript Courses</a
-                  >
+                  <div class="has-text-centered">
+                    <a
+                      href="https://www.udemy.com/course/the-web-developer-bootcamp/"
+                      class="button is-warning"
+                      >Javascript Courses</a
+                    >
+                  </div>
                 </div>
               </div>
             </article>
@@ -79,12 +78,9 @@
             <h2 class="title">About My Current Stack</h2>
             <div class="content">
               <p>
-                Here is a little information based off my stack:
-                <br />
-                I use VSCode for my editor, Pop!_OS for my OS, and GitHub to
-                manage my source code. When it comes to managing the front end I
-                use Vue.js or Nuxt.js with Bulma. To manage my backend I use
-                MongoDB or Firebase with Node.js.
+                I use VSCode for my editor, <strong>Pop!_OS</strong> for my OS, and GitHub to
+                manage my source code. When it comes to building my applications I enjoy using Javascript frameworks like
+                Vue.js or Nuxt.js with Bulma for styling. To manage data and the backend I prefer building using Node.js with MongoDB/Firebase. 
               </p>
             </div>
           </div>
@@ -110,7 +106,13 @@
                       based theme for your VSCode editor that I made.
                     </p>
                     <br />
-                    <a href="#" class="button is-dark">Perty Theme VSCode</a>
+                    <div class="has-text-centered">
+                      <a
+                      href="https://marketplace.visualstudio.com/items?itemName=ericquelch.perty"
+                      class="button is-dark"
+                      >Perty Theme VSCode</a
+                    >
+                    </div>
                   </div>
                 </article>
               </div>
@@ -131,7 +133,11 @@
                     </p>
                     <br />
                     <div class="has-text-centered">
-                      <a href="#" class="button is-github">Visit My Github</a>
+                      <a
+                        href="https://github.com/quelchlax"
+                        class="button is-github"
+                        >Visit My Github</a
+                      >
                     </div>
                   </div>
                 </article>
@@ -155,7 +161,9 @@
                     </p>
                     <br />
                     <div class="has-text-centered">
-                      <a href="#" class="button is-nuxt">Nuxt.js Documents</a>
+                      <a href="https://nuxtjs.org/" class="button is-nuxt"
+                        >Nuxt Documents</a
+                      >
                     </div>
                   </div>
                 </article>
@@ -180,7 +188,9 @@
                     </p>
                     <br />
                     <div class="has-text-centered">
-                      <a href="#" class="button is-vue">Vue.js Documents</a>
+                      <a href="https://v3.vuejs.org/" class="button is-vue"
+                        >Vue Documents</a
+                      >
                     </div>
                   </div>
                 </article>
@@ -207,7 +217,9 @@
                     </p>
                     <br />
                     <div class="has-text-centered">
-                      <a href="#" class="button is-bulma">Read More</a>
+                      <a href="https://bulma.io/" class="button is-primary"
+                        >Bulma Documents</a
+                      >
                     </div>
                   </div>
                 </article>
@@ -221,13 +233,14 @@
 </template>
 
 <script>
-export default {};
+import ProgressBar from '@/components/ProgressBar.vue';
+export default {
+  components: {
+    ProgressBar
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-@media all and (max-width: 796px) {
-  .--mobile {
-    text-align: center;
-  }
-}
+
 </style>
