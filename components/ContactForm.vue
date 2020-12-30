@@ -1,5 +1,5 @@
 <template>
-  <form name="contact" class="mt-2" data-netlify="true">
+  <form name="contact" class="mt-2" netlify>
     <div class="field">
       <label class="label">Name</label>
       <div class="control">
