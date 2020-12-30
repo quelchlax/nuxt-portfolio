@@ -1,5 +1,5 @@
 <template>
-  <form name="contact" class="mt-2" action="POST" data-netlify='true'>
+  <form name="contact" class="mt-2" action="POST" data-netlify="true">
     <div class="field">
       <label class="label">Name</label>
       <div class="control">
@@ -38,6 +38,10 @@
       </div>
     </div>
 
+    <div class="field">
+      <div data-netlify-recaptcha="true"></div>
+    </div>
+
     <div class="field is-grouped">
       <div class="control">
         <button type="submit" class="button is-success">Submit</button>
@@ -65,7 +69,7 @@ export default {
       this.message = this.name = this.email = "";
     }
   },
-  name: 'ContactForm'
+  name: "ContactForm"
 };
 </script>
 
