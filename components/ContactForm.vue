@@ -1,5 +1,6 @@
 <template>
-  <form name="contact" method="post" netlify-honeypot='bot-field' class="mt-2" netlify>
+  <form name="contact" method="POST" netlify-honeypot='bot-field' class="mt-2" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
     <div class="field">
       <label class="label">Name</label>
       <div class="control">
