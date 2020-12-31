@@ -17,10 +17,4 @@ export default {
 };
 </script>
 
-<style>
-.burger:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border-radius: 50%;
-}
-</style>
+

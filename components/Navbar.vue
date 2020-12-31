@@ -1,6 +1,5 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main-navigation">
-    
+  <nav class="navbar" id="navbar" role="navigation" aria-label="main-navigation">
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
         <strong>Welcome</strong>
@@ -20,12 +19,17 @@
       </div>
 
       <div class="navbar-end">
+         <div class="navbar-item">
+          <Toggler />
+          </div>
+        </div>
         <div class="navbar-item">
           <a href="" class="button is-dark">
             <img src="./../static/icons/github.svg" alt="my-github">
             <span class="mr-1 ml-1">My Github</span>
           </a>
         </div>
+       
       </div>
 
     </div>
@@ -34,12 +38,12 @@
 </template>
 
 <script>
+import Toggler from '@/components/Toggler.vue';
 import Hamburger from '@/components/Hamburger.vue';
 export default {
   components: {
-    Hamburger
+    Hamburger, Toggler
   }
 };
 </script>
 
-<style></style>

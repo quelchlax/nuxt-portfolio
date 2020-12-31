@@ -25,6 +25,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css: ['@/assets/main.scss',],
   loading: { color: "#008776", height: "1px" },
   components: true,
   modules: [

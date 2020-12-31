@@ -62,21 +62,3 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.post-image {
-  width: 468px;
-  height: 468px;
-}
-
-@media screen and (max-width: 500px) {
-  
-  .post-image {
-    height: 50%;
-    background-position: center;
-  }
-
-  .is-mobile {
-    text-align: center;
-  }
-}
-</style>

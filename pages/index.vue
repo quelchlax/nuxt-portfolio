@@ -145,7 +145,7 @@
               <div class="column is-4">
                 <article class="columns is-multiline">
                   <div class="column is-12 post-img">
-                    <img src="../static/images/nuxt.png" alt="vuejs" />
+                    <img src="../static/images/nuxt.png" class="--rounded" alt="vuejs" />
                   </div>
                   <div class="column is-12 featured-content ">
                     <h3 class="heading post-category">Nuxt.JS</h3>
@@ -241,6 +241,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
 
-</style>

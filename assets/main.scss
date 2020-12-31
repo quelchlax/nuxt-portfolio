@@ -1,0 +1,148 @@
+@mixin fillout() {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin topleft() {
+  top: 0;
+  left: 0;
+}
+
+.--dark {
+  background-color: #151b22;
+  
+  p, div, h1, h2, label{
+    color: white;
+  }
+
+  .button:hover {
+    color: gainsboro;
+  }
+
+  .button {
+    outline: none;
+    border: none;
+  }
+
+  strong {
+    color: #00d0b3;
+  }
+  footer {
+    background-color: #0c1117
+  }
+}
+
+.menu-wrapper {
+  @include fillout();
+
+  .menu-backdrop {
+    @include fillout();
+    z-index: 100;
+    position: fixed;
+    @include topleft();
+    background-color: rgba(12, 17, 23, 0.9);
+  }
+
+  .menu-navbar {
+    height: 100%;
+    width: 240px;
+    @include topleft();
+    position: fixed;
+
+    background-color: #0c1117;
+    z-index: 200;
+    box-sizing: border-box;
+    padding: 2rem;
+
+    .menu-label {
+      color: white;
+    }
+
+    .menu-list {
+      a {
+        color: white;
+
+        &:hover {
+          color: #6c44c4;
+        }
+      }
+    }
+  }
+
+  .end {
+    margin-top: auto;
+  }
+
+  .slide-side-enter-active,
+  .slide-side-leave-active {
+    transition: all 0.3s ease-out;
+  }
+  .slide-side-enter,
+  .slide-side-leave-to {
+    transform: translateX(-100%);
+  }
+}
+
+.--rounded {
+  border-radius: 30px;
+}
+
+.is-github {
+  background-color: #6c44c4;
+  color: white;
+}
+
+.is-nuxt {
+  background-color: #5b7e8b;
+  color: white;
+}
+
+.is-vue {
+  background-color: #008776;
+  color: white;
+}
+
+.burger:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+}
+
+.social-links {
+  height: 32px;
+  width: 32px;
+  color: white;
+}
+
+.post-image {
+  width: 468px;
+  height: 468px;
+}
+
+@media screen and (max-width: 500px) {
+  .post-image {
+    height: 50%;
+    background-position: center;
+  }
+
+  .is-mobile {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobile {
+    max-width: 300px;
+    word-wrap: break-word;
+
+    * {
+      font-size: 14px;
+    }
+  }
+}
+
+@media all and (max-width: 796px) {
+  .--mobile {
+    text-align: center;
+  }
+}

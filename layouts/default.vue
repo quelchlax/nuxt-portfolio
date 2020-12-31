@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <header class="container">
+  <main id="app">
+    <header>
       <Navbar @side-toggle="toggleSidebar = !toggleSidebar" />
     </header>
     <aside>
@@ -37,29 +37,3 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@media all and (max-width: 796px) {
-  .--mobile {
-    text-align: center;
-  }
-}
-
-.--rounded {
-  border-radius: 30px;
-}
-
-.is-github {
-  background-color: #6c44c4;
-  color: white;
-}
-
-.is-nuxt {
-  background-color: #5b7e8b;
-  color: white;
-}
-
-.is-vue {
-  background-color: #008776;
-  color: white;
-}
-</style>
