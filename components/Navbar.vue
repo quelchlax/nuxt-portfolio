@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="navbar-item">
-          <a href="" class="button is-dark">
+          <a href="http://github.com/quelchlax" class="button is-dark">
             <img src="./../static/icons/github.svg" alt="my-github">
             <span class="mr-1 ml-1">My Github</span>
           </a>
