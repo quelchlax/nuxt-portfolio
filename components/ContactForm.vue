@@ -2,7 +2,7 @@
   <form name="contact" method="POST" netlify-honeypot='bot-field' class="mt-2" data-netlify="true">
     <input type="hidden" name="form-name" value="contact">
     <div class="field">
-      <label class="label">Name</label>
+      <label class="label" for="name">Name</label>
       <div class="control">
         <input
           class="input is-primary"
@@ -15,7 +15,7 @@
     </div>
 
     <div class="field">
-      <label class="label">Email</label>
+      <label class="label" for="email">Email</label>
       <div class="control">
         <input
           class="input is-primary"
@@ -28,7 +28,7 @@
     </div>
 
     <div class="field">
-      <label class="label is-lite">Message</label>
+      <label class="label is-lite" for="message">Message</label>
       <div class="control">
         <textarea
           v-model="message"

@@ -42,11 +42,11 @@
               </div>
               <div class="column is-7 featured-content">
                 <div>
-                  <h3 class="heading post-category">Web Development Student</h3>
-                  <h2 class="subtitle">Eric Quelch</h2>
-                  <h1 class="title post-title">
+                  <div class="heading post-category">Web Development Student</div>
+                  <div class="subtitle">Eric Quelch</div>
+                  <div class="title post-title">
                     About Me
-                  </h1>
+                  </div>
                   <p>
                     Hello and thanks for dropping by. My name is Eric Quelch and
                     I have been programming for almost 2 years now. I am
@@ -75,7 +75,7 @@
             </article>
           </div>
           <div class="container mt-6">
-            <h2 class="title">About My Current Stack</h2>
+            <div class="title">About My Current Stack</div>
             <div class="content">
               <p>
                 I use VSCode for my editor, <strong>Pop!_OS</strong> for my OS, and GitHub to
@@ -122,10 +122,10 @@
                     <img src="../static/images/github.png" alt="github" />
                   </div>
                   <div class="column is-6 featured-content ">
-                    <h3 class="heading post-category">Git and GitHub</h3>
-                    <h1 class="title post-title">
+                    <div class="heading post-category">Git and GitHub</div>
+                    <div class="title post-title">
                       Check Out Some Of My Repositories
-                    </h1>
+                    </div>
                     <p class="post-excerpt">
                       I post a lot of example code and guides on my GitHub. If
                       your new to web development or programming, it might be
@@ -148,10 +148,10 @@
                     <img src="../static/images/nuxt.png" class="--rounded" alt="vuejs" />
                   </div>
                   <div class="column is-12 featured-content ">
-                    <h3 class="heading post-category">Nuxt.JS</h3>
-                    <h1 class="title post-title">
+                    <div class="heading post-category">Nuxt.JS</div>
+                    <div class="title post-title">
                       My Personal Framework Of Choice
-                    </h1>
+                    </div>
                     <p class="post-excerpt">
                       Based off Vue.JS, Nuxt by far is my favorite framework.
                       It's very powerful and simple to use, and can do more than
@@ -174,8 +174,8 @@
                     <img src="../static/images/vue.png" alt="Featured Image" />
                   </div>
                   <div class="column is-12 featured-content ">
-                    <h3 class="heading post-category">Vue.JS</h3>
-                    <h1 class="title post-title">Vue Needs More Love</h1>
+                    <div class="heading post-category">Vue.JS</div>
+                    <div class="title post-title">Vue Needs More Love</div>
                     <p class="post-excerpt">
                       When I first started to learn more about frameworks and
                       which one to choose, I started with React. Over time I
@@ -204,10 +204,10 @@
                     />
                   </div>
                   <div class="column is-12 featured-content ">
-                    <h3 class="heading post-category">Bulma</h3>
-                    <h1 class="title post-title">
+                    <div class="heading post-category">Bulma</div>
+                    <div class="title post-title">
                       Bulma is Simple and Gorgeous
-                    </h1>
+                    </div>
                     <p class="post-excerpt">
                       Coming from Bootstrap I stumbled across Bulma and fell in
                       love. I really recommend anyone who is new to development
