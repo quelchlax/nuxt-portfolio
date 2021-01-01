@@ -31,6 +31,7 @@ export default {
   modules: [
     '@nuxtjs/bulma',
     '@nuxtjs/pwa',
+    '@nuxtjs/axios',
     '@nuxt/content',
   ],
   pwa: {

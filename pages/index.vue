@@ -66,7 +66,7 @@
                   <div class="has-text-centered">
                     <a
                       href="https://www.udemy.com/course/the-web-developer-bootcamp/"
-                      class="button is-warning"
+                      class="button is-js"
                       >Javascript Courses</a
                     >
                   </div>

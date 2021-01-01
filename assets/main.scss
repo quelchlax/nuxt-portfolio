@@ -10,8 +10,12 @@
 
 .--dark {
   background-color: #151b22;
-  
-  p, div, h1, h2, label{
+
+  p,
+  div,
+  h1,
+  h2,
+  label {
     color: white;
   }
 
@@ -28,7 +32,7 @@
     color: #00d0b3;
   }
   footer {
-    background-color: #0c1117
+    background-color: #0c1117;
   }
 }
 
@@ -90,16 +94,36 @@
 .is-github {
   background-color: #6c44c4;
   color: white;
+
+  &:hover {
+    background-color: #663dbe;
+    color: white;
+  }
+}
+
+.is-js {
+  background-color: #eec40b;
+  color: black;
 }
 
 .is-nuxt {
   background-color: #5b7e8b;
   color: white;
+
+  &:hover {
+    background-color: #4d717e;
+    color: white;
+  }
 }
 
 .is-vue {
   background-color: #008776;
   color: white;
+
+  &:hover {
+    background-color: #037062;
+    color: white;
+  }
 }
 
 .burger:hover {
@@ -144,5 +168,162 @@
 @media all and (max-width: 796px) {
   .--mobile {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobile {
+    max-width: 300px;
+    word-wrap:break-word;
+
+    * {
+      font-size: 14px;
+    }
+  }
+}
+
+.loading {
+  .subtitle {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.is-loading {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 16px solid #0a1117;
+  border-radius: 50%;
+  border-top: 16px solid #008cf6;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 36px;
+  outline: none;
+  border: none;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #0fb85a;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #0fb85a;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+
+.marked {
+  word-wrap: break-word;
+  font-family: inherit;
+
+  a:hover {
+    color: rgb(170, 53, 170);
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 6px;
+    margin-top: 4px;
+  }
+
+  p {
+    margin: 4px 2px 2px 4px;
+    padding: 4px;
+  }
+
+  code {
+    color: #0fb85a;
+    border-radius: 4px;
+    background-color: #001625;
+  }
+
+  strong {
+    color: #775624;
+  }
+
+  pre {
+    background-color: #001625;
+    border: 1px solid #6c44c4;
+    border-radius: 20px;
+
+    code {
+      font-family:inherit;
+      color: #bcc6cc;
+    }
   }
 }

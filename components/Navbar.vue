@@ -10,8 +10,11 @@
     <div class="navbar-menu">
       
       <div class="navbar-start">
-        <nuxt-link class="navbar-item" to="/blog">
-          Articles
+        <nuxt-link class="navbar-item" to="/linux">
+          Linux Tips
+        </nuxt-link>
+        <nuxt-link class="navbar-item" to="/uploads">
+          Web Development
         </nuxt-link>
         <nuxt-link class="navbar-item" to="/contact">
           Contact Me
@@ -32,7 +35,6 @@
        
       </div>
 
-    </div>
 
   </nav>
 </template>

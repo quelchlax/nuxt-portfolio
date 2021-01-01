@@ -51,6 +51,16 @@
             </a>
           </li>
         </ul>
+        <hr>
+        <p class="menu-label">
+          Toggle Theme
+        </p>
+        <ul class="menu-list">
+          <li class="ml-2">
+            <Toggler />
+          </li>
+        </ul>
+        
       </div>
     </transition>
   </aside>
@@ -64,5 +74,3 @@ export default {
   }
 };
 </script>
-
-

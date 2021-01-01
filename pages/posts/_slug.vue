@@ -2,16 +2,12 @@
   <section class="container is-fluid mobile">
     <h1 class="title">{{ doc.title }}</h1>
     <h2 class="subtitle">Published: {{ date }}</h2>
-    <nuxt-content class="" :document="doc" />
+    <nuxt-content :document="doc" />
 
 
     <div class="content has-text-centered mt-6 pt-6">
-      <button class="button is-link is-light" v-if="prev">
-        <nuxt-link :to="prev.slug">Back</nuxt-link>
-      </button>
-      <button class="button is link is-light" v-if="next">
-        <nuxt-link :to="next.slug">Next</nuxt-link>
-      </button>
+        <nuxt-link v-if="prev" class="button is-github" :to="prev.slug">Back</nuxt-link>
+        <nuxt-link v-if="next" class="button is-github" :to="next.slug">Next</nuxt-link>
     </div>
   </section>
 </template>
@@ -31,15 +27,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@media screen and (max-width: 400px) {
-  .mobile {
-    max-width: 300px;
-    word-wrap:break-word;
 
-    * {
-      font-size: 14px;
-    }
-  }
-}
-</style>

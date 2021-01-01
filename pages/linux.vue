@@ -3,10 +3,9 @@
   <div class="hero-body">
   <section class="container">
     <div class="section">
-      <h1 class="title">Blogs, Articles and Guides by Quelchlax</h1>
+      <h1 class="title">Linux Tips and Tricks</h1>
       <p>
-        Articles about coding, programming, designs and much more. Guides to
-        help anyone who might stumble upon these articles.
+        If your a developer using Mac or Windows here are some guides to help showcase the power of Linux operating systems for your work. 
       </p>
     </div>
 
