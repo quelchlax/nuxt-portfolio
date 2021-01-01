@@ -9,13 +9,18 @@
         </p>
         <ul class="menu-list" @click="$emit('close')">
           <li>
-            <nuxt-link to="/blog">
-              Articles
+            <nuxt-link to="/linux">
+              Linux Tips
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/uploads">
+              Web Development
             </nuxt-link>
           </li>
           <li>
             <nuxt-link to="/contact">
-              Contact
+              Contact Me
             </nuxt-link>
           </li>
         </ul>
