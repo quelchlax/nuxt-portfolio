@@ -9,6 +9,7 @@
           v-model="name"
           name="name"
           type="text"
+          id="name"
           placeholder="Name"
         />
       </div>
@@ -22,6 +23,7 @@
           v-model="email"
           name="email"
           type="text"
+          id="email"
           placeholder="Email"
         />
       </div>
@@ -33,6 +35,7 @@
         <textarea
           v-model="message"
           name="message"
+          id="message"
           class="textarea is-success"
           placeholder="Say Hello"
         ></textarea>
