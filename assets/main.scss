@@ -8,6 +8,23 @@
   left: 0;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0c1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #114568;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .--dark {
   background-color: #151b22;
 
@@ -174,7 +191,7 @@
 @media screen and (max-width: 400px) {
   .mobile {
     max-width: 300px;
-    word-wrap:break-word;
+    word-wrap: break-word;
 
     * {
       font-size: 14px;
@@ -322,7 +339,7 @@
     border-radius: 20px;
 
     code {
-      font-family:inherit;
+      font-family: inherit;
       color: #bcc6cc;
     }
   }
