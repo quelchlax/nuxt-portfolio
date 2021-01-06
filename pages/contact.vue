@@ -5,7 +5,8 @@
         <div class="column is-two-thirds has-text-left">
           <h1 class="title is-1">Contact Me</h1>
           <p class="is-size-4">
-            Have a question? Feel free to contact me here, or reach out to me on social media.
+            Have a question? Feel free to contact me here, or reach out to me on
+            social media.
           </p>
 
           <div class="social-media mt-6">
@@ -58,5 +59,3 @@ export default {
   }
 };
 </script>
-
-

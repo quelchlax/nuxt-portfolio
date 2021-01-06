@@ -2,13 +2,13 @@
   <section class="container is-fluid mobile">
     <h1 class="title">{{ doc.title }}</h1>
     <h2 class="subtitle">Published: {{ date }}</h2>
+
     <nuxt-content :document="doc" />
-
-
     <div class="content has-text-centered mt-6 pt-6">
-        <nuxt-link v-if="prev" class="button is-github" :to="prev.slug">Back</nuxt-link>
-        <nuxt-link v-if="next" class="button is-github" :to="next.slug">Next</nuxt-link>
+      <nuxt-link v-if="prev" class="button is-github" :to="prev.slug">Back</nuxt-link>
+      <nuxt-link v-if="next" class="button is-github" :to="next.slug">Next</nuxt-link>
     </div>
+    
   </section>
 </template>
 

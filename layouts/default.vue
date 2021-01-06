@@ -1,5 +1,5 @@
 <template>
-  <main id="app">
+  <div id="app">
     <header>
       <Navbar @side-toggle="toggleSidebar = !toggleSidebar" />
     </header>
@@ -18,7 +18,7 @@
         <!-- <button class="button is-link">Buy Me A Coffee</button> -->
       </div>
     </footer>
-  </main>
+  </div>
 </template>
 
 <script>
