@@ -56,16 +56,26 @@
             </a>
           </li>
         </ul>
-        <hr>
-        <p class="menu-label">
-          Toggle Theme
-        </p>
+        <hr />
         <ul class="menu-list">
-          <li class="ml-2">
-            <Toggler />
+          <li>
+            <button class="button --btn">
+              <img
+                class="mr-1"
+                src="../static/icons/sun.svg"
+                width="32px"
+                alt="sun"
+              />
+              <Toggler />
+              <img
+                class="ml-1"
+                src="../static/icons/moon.svg"
+                width="32px"
+                alt="moon"
+              />
+            </button>
           </li>
         </ul>
-        
       </div>
     </transition>
   </aside>
@@ -79,3 +89,12 @@ export default {
   }
 };
 </script>
+
+
+<style scoped>
+.--btn {
+  outline: none;
+  border: none;
+  background-color: #0b1117;
+}
+</style>

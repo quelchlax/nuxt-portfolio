@@ -243,7 +243,7 @@
   position: relative;
   display: inline-block;
   width: 50px;
-  height: 36px;
+  height: 34px;
   outline: none;
   border: none;
 
@@ -271,7 +271,7 @@
     height: 26px;
     width: 26px;
     left: 4px;
-    bottom: 5px;
+    bottom: 4px;
     background-color: white;
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -286,9 +286,9 @@
   }
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(18px);
-    -ms-transform: translateX(18px);
-    transform: translateX(18px);
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
   }
 
   .slider.round {

@@ -26,14 +26,28 @@
       </div>
       <div class="navbar-end">
         <div class="navbar-item">
-          <Toggler />
+          <a href="http://github.com/quelchlax" class="button is-github">
+            <img src="../static/icons/github.svg" alt="my-github" />
+            <span class="mr-1 ml-1">My Github</span>
+          </a>
         </div>
-      </div>
-      <div class="navbar-item">
-        <a href="http://github.com/quelchlax" class="button is-dark">
-          <img src="./../static/icons/github.svg" alt="my-github" />
-          <span class="mr-1 ml-1">My Github</span>
-        </a>
+        <div class="navbar-item">
+          <button class="button is-dark p-1">
+            <img
+              class="mr-1"
+              src="../static/icons/sun.svg"
+              width="32px"
+              alt="sun"
+            />
+            <Toggler />
+            <img
+              class="ml-1"
+              src="../static/icons/moon.svg"
+              width="32px"
+              alt="moon"
+            />
+          </button>
+        </div>
       </div>
     </div>
   </nav>
@@ -49,3 +63,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.--btn {
+  border: none;
+  outline: none;
+}
+</style>
