@@ -1,0 +1,60 @@
+.centered {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.has-link {
+  color: white;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.--dark {
+  background-color: #151b22;
+
+  .card {
+    background-color: inherit;
+    color: white;
+  }
+
+  .menu-wrapper .menu-navbar {
+    background-color: white;
+
+    p,
+    div,
+    h1,
+    h2,
+    label,
+    li a {
+      color: black;
+    }
+  }
+
+  p,
+  div,
+  h1,
+  h2,
+  label,
+  strong {
+    color: white;
+  }
+
+  footer {
+    background-color: #0c1117;
+  }
+}
+
+.button {
+  outline: none;
+  border: none;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

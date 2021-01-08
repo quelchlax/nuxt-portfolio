@@ -1,5 +1,5 @@
 <template>
-  <div class="column">
+  <div class="hero-body">
     <slot></slot>
   </div>
 </template>

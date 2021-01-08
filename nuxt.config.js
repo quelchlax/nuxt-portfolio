@@ -1,9 +1,7 @@
 export default {
-  ssr: false,
-  target: 'static',
-  mode: 'spa',
+  target: "static",
   head: {
-    title: "Quelchlax Tech",
+    title: "ericquelch.dev",
     titleTemplate: "Eric Quelch - Full Stack Javascript Web Developer",
     htmlAttrs: {
       lang: "en",
@@ -16,28 +14,24 @@ export default {
         content: "width=device-width, initial-scale=1"
       },
       {
-        hid: "Quelchlax Portfolio",
-        name: "Eric Quelch - Full Stack Javascript Developer and Web Development Student",
+        hid: "ericquelch.dev",
+        name:
+          "Eric Quelch - Full Stack Javascript Developer and Web Development Student",
         content:
           "Eric Quelch is a web development student and full stack javascript developer in training. Currently living in London Ontario Canada"
       }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
-  css: ['@/assets/main.scss',],
+  css: ["@/assets/scss/style.scss"],
+
   loading: { color: "#008776", height: "1px" },
   components: true,
-  modules: [
-    '@nuxtjs/bulma',
-    '@nuxtjs/pwa',
-    '@nuxtjs/axios',
-    '@nuxt/content',
-  ],
+  modules: ["@nuxtjs/bulma", "@nuxtjs/pwa", "@nuxtjs/axios", "@nuxt/content"],
   pwa: {
     icon: {
-      iconFileName: process.env.NODE_ENV==='staging' ? 'logo.png': 'favicon.ico'
+      iconFileName:
+        process.env.NODE_ENV === "staging" ? "logo.png" : "favicon.ico"
     }
   },
   build: {
@@ -47,6 +41,6 @@ export default {
           customProperties: false
         }
       }
-    },
+    }
   }
-}
+};

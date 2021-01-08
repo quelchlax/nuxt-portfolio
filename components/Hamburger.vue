@@ -1,7 +1,6 @@
 <template>
   <span
     class="navbar-burger burger"
-    data-target="navbarMenuHeroC"
     role="button"
     @click="$emit('toggle')"
   >

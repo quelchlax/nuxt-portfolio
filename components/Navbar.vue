@@ -1,72 +1,60 @@
 <template>
-  <nav
+  <header
     class="navbar"
     id="navbar"
     role="navigation"
     aria-label="main-navigation"
   >
-    <div class="navbar-brand">
+    <section class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <strong>Welcome</strong>
+        <strong>{{ brand }}</strong>
       </nuxt-link>
       <Hamburger @toggle="$emit('side-toggle')" />
-    </div>
+    </section>
 
-    <div class="navbar-menu">
-      <div class="navbar-start">
-        <nuxt-link class="navbar-item" to="/linux">
-          Linux Tips
-        </nuxt-link>
-        <nuxt-link class="navbar-item" to="/uploads">
-          Web Development
-        </nuxt-link>
-        <nuxt-link class="navbar-item" to="/contact">
-          Contact Me
-        </nuxt-link>
-      </div>
-      <div class="navbar-end">
+    <nav class="navbar-menu">
+      <aside class="navbar-start">
+        <div class="navbar-item" v-for="link in links" :key="link.id">
+          <nuxt-link class="is-link" :to="link.path">{{ link.name }}</nuxt-link>
+        </div>
+      </aside>
+
+      <aside class="navbar-end">
         <div class="navbar-item">
-          <a href="http://github.com/quelchlax" class="button is-github">
-            <img src="../static/icons/github.svg" alt="my-github" />
+          <a :href="github" class="button is-dark">
+            <img src="../assets/icons/github.svg" alt="my-github" />
             <span class="mr-1 ml-1">My Github</span>
           </a>
         </div>
+
         <div class="navbar-item">
-          <button class="button is-dark p-1">
-            <img
-              class="mr-1"
-              src="../static/icons/sun.svg"
-              width="32px"
-              alt="sun"
-            />
-            <Toggler />
-            <img
-              class="ml-1"
-              src="../static/icons/moon.svg"
-              width="32px"
-              alt="moon"
-            />
-          </button>
+          <img src="../assets/icons/sun.svg" width="32px" alt="sun" />
+          <Toggler />
+          <img src="../assets/icons/moon.svg" width="32px" alt="moon" />
         </div>
-      </div>
-    </div>
-  </nav>
+      </aside>
+    </nav>
+  </header>
 </template>
 
 <script>
-import Toggler from "@/components/Toggler.vue";
-import Hamburger from "@/components/Hamburger.vue";
 export default {
-  components: {
-    Hamburger,
-    Toggler
+  data() {
+    return {
+      links: [
+        { path: "/blog", name: "Blog" },
+        { path: "/linux", name: "Linux Tips" },
+        { path: "/contact", name: "Contact" }
+      ],
+      github: "http://github.com/quelchlax",
+      brand: "Welcome"
+    };
   }
 };
 </script>
 
-<style scoped>
-.--btn {
-  border: none;
-  outline: none;
+<style lang="scss">
+.is-link {
+  color: inherit;
 }
 </style>

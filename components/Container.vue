@@ -1,11 +1,5 @@
 <template>
-  <div :class="'container ' + props">
+  <div class="container">
     <slot></slot>
   </div>
 </template>
-
-<script>
-export default {
-  props: ['props']
-}
-</script>

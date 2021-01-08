@@ -2,10 +2,14 @@
   <article class="media">
     <div class="media-content">
       <div class="content">
-        <p>
-          <strong>{{skill}}</strong>
+        <p class="p-2">
+          <strong>{{ skill }}</strong>
           <br />
-          <progress :class="'progress ' + color" :value="amount" max="100"></progress>
+          <progress
+            :class="'progress ' + color"
+            :value="amount"
+            max="100"
+          ></progress>
         </p>
       </div>
     </div>
@@ -14,8 +18,20 @@
 
 <script>
 export default {
-  props: ["skill", "amount", "color"],
-  name: 'Progress'
-};
+  props: {
+    skill: {
+      type: String,
+      required: true
+    },
+    amount: {
+      type: String,
+      required: true
+    },
+    color: {
+      type: String,
+      required: true,
+      default: 'is-primary'
+    }
+  }
+}
 </script>
-

@@ -1,5 +1,5 @@
 {
-  "name": "quelchlax.tech",
+  "name": "ericquelch.dev",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxt/content": "^1.9.0",
-    "@nuxtjs/axios": "^5.12.4",
+    "@nuxt/content": "^1.11.1",
+    "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/bulma": "^1.3.0",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",

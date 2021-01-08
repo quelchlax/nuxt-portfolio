@@ -1,11 +1,5 @@
 <template>
-   <div :class="'columns ' + property">
+  <div class="columns">
     <slot></slot>
   </div>
 </template>
-
-<script>
-export default {
-  props: ['property']
-}
-</script>

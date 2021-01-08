@@ -1,61 +1,30 @@
 <template>
-  <form name="contact" method="POST" netlify-honeypot='bot-field' class="mt-2" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
-    <div class="field">
-      <label class="label" for="name">Name</label>
-      <div class="control">
-        <input
-          class="input is-primary"
-          v-model="name"
-          name="name"
-          type="text"
-          id="name"
-          placeholder="Name"
-        />
-      </div>
-    </div>
+  <form name="contact" method="POST" netlify-honeypot='bot-field' class="mt-2">
+    <input type="hidden" name="contact" value="contact">
+   
+    <Field label="name" name='Name'>
+      <input type="email" name="email" id="email" v-model="name" placeholder="Name" class="input is-primary">
+    </Field>
 
-    <div class="field">
-      <label class="label" for="email">Email</label>
-      <div class="control">
-        <input
-          class="input is-primary"
-          v-model="email"
-          name="email"
-          type="text"
-          id="email"
-          placeholder="Email"
-        />
-      </div>
-    </div>
+    <Field label='email' name='Email'>
+      <input type="email" name="email" id="email" v-model="email" placeholder="Email" class="input is-primary">
+    </Field>
 
-    <div class="field">
-      <label class="label is-lite" for="message">Message</label>
-      <div class="control">
-        <textarea
-          v-model="message"
-          name="message"
-          id="message"
-          class="textarea is-success"
-          placeholder="Say Hello"
-        ></textarea>
-      </div>
-    </div>
+    <Field label='message' name='Message'>
+      <textarea name="message" id="message" v-model='message' placeholder="Say Hello" class="textarea is-primary"></textarea>
+    </Field>
 
     <div class="field">
       <div data-netlify-recaptcha="true"></div>
     </div>
 
-    <div class="field is-grouped">
+    <Field class="is-grouped">
       <div class="control">
         <button type="submit" class="button is-success">Submit</button>
+        <button @click.prevent='clearForm' class="button is-danger">Clear</button>
       </div>
-      <div class="control">
-        <button @click.prevent="clearForm" class="button is-danger">
-          Clear
-        </button>
-      </div>
-    </div>
+    </Field>
+
   </form>
 </template>
 
@@ -63,17 +32,15 @@
 export default {
   data() {
     return {
-      message: "",
-      name: "",
-      email: ""
-    };
+      name: null,
+      email: null,
+      message: null,
+    }
   },
   methods: {
     clearForm() {
-      this.message = this.name = this.email = "";
+      this.message = this.name = this.email = '';
     }
-  },
-  name: "ContactForm"
-};
+  }
+}
 </script>
-
