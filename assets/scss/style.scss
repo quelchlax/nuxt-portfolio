@@ -58,3 +58,48 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
+
+.marked {
+  word-wrap: break-word;
+  font-family: inherit;
+
+  a:hover {
+    color: rgb(170, 53, 170);
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 6px;
+    margin-top: 4px;
+  }
+
+  p {
+    margin: 4px 2px 2px 4px;
+    padding: 4px;
+  }
+
+  code {
+    color: #0fb85a;
+    border-radius: 4px;
+    background-color: #001625;
+  }
+
+  strong {
+    color: #775624;
+  }
+
+  pre {
+    background-color: #001625;
+    border: 1px solid #6c44c4;
+    border-radius: 20px;
+
+    code {
+      font-family: inherit;
+      color: #bcc6cc;
+    }
+  }
+}

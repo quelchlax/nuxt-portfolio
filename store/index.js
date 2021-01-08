@@ -14,12 +14,12 @@ export const actions = {
   },
 
   /* TODO: currently not being used until I figure out how to get markdown content working with marked.js */
-  // async getPost({ commit },  {id} ) {
-  //   const { data } = await this.$axios.get(
-  //     `${config.link}/${id}`
-  //   );
-  //   commit("SET_POST", data);
-  // }
+  async getPost({ commit },  {id} ) {
+    const { data } = await this.$axios.get(
+      `${config.link}/${id}`
+    );
+    commit("SET_POST", data);
+  }
 };
 
 export const mutations = {
@@ -28,7 +28,7 @@ export const mutations = {
   },
 
   /* TODO: fix marked issue to properly display markdown content */
-  // SET_POST(state, post) {
-  //   state.post = post;
-  // }
+  SET_POST(state, post) {
+    state.post = post;
+  }
 };
