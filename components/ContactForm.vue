@@ -3,7 +3,7 @@
     <input type="hidden" name="contact" value="contact">
    
     <Field label="name" name='Name'>
-      <input type="email" name="email" id="email" v-model="name" placeholder="Name" class="input is-primary">
+      <input type="name" name="name" id="name" v-model="name" placeholder="Name" class="input is-primary">
     </Field>
 
     <Field label='email' name='Email'>
