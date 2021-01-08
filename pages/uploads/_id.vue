@@ -1,43 +1,50 @@
 <template>
-  <article v-if="article" class="hero is-fullheight">
-    <section class="hero-body mt-6 mb-6 mobile">
-      <div class="container is-fluid">
-        <h1 class="title">{{ article.title }}</h1>
-        <h2 class="subtitle">Published @{{ article.published }}</h2>
-        <div class="marked" v-html="content">
-          <!-- rendered -->
-        </div>
+  <section>
+    <article v-if="article" class="hero is-fullheight">
+      <HeroBody class="mt-6 mb-6 mobile">
+        <Container class="is-fluid">
+          <h1 class="title">{{ post.title }}</h1>
+          <h2 class="subtitle">Published @{{ post.published }}</h2>
+          <div class="marked" v-html="article">
+            <!-- rendered -->
+          </div>
+        </Container>
+      </HeroBody>
+      <div class="has-text-centered">
+        <nuxt-link to="/blog" class="button is-danger">Go Back</nuxt-link>
+        <a href="#" class="button is-link">Top Of Page</a>
       </div>
-    </section>
-    <div class="has-text-centered">
-      <nuxt-link to="/uploads" class="button is-danger">Go Back</nuxt-link>
-      <a href="#" class="button is-link">Top Of Page</a>
+    </article>
+    <div v-else>
+      <section class="hero-body mt-6 mb-6 mobile">
+        <Container>
+          <h2 class="title is-4">{{ error }}</h2>
+        </Container>
+      </section>
     </div>
-  </article>
+  </section>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import marked from "marked";
-import { config } from "@/plugins/config";
 export default {
   data() {
     return {
-      article: [],
-      content: null,
+      article: "",
       error: null
     };
   },
   async fetch() {
     try {
-      const response = await this.$axios.get(
-        `${config.link}/${this.$route.params.id}`
-      );
-      this.article = response.data;
-      this.content = marked(response.data.body);
+      await this.$store.dispatch("getPost", { id: this.$route.params.id });
+      return (this.article = marked(this.post.body));
     } catch (error) {
       this.error = error;
     }
   },
-  fetchOnServer: false
+  computed: {
+    ...mapState(["post"])
+  }
 };
 </script>

@@ -64,8 +64,17 @@
 import {mapState} from 'vuex';
 
 export default {
+  data() {
+    return {
+      error: null
+    }
+  },
   async fetch(){
-    await this.$store.dispatch('getPosts')
+    try {
+      await this.$store.dispatch('getPosts')
+    } catch (error) {
+      this.error = error
+    }
   },
   computed: {
     ...mapState(['posts'])

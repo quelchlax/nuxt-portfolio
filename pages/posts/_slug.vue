@@ -5,10 +5,10 @@
 
     <nuxt-content class="marked" :document="doc" />
     <div class="content has-text-centered mt-6 pt-6">
-      <nuxt-link v-if="prev" class="button is-github" :to="prev.slug"
+      <nuxt-link v-if="prev" class="button is-link" :to="prev.slug"
         >Back</nuxt-link
       >
-      <nuxt-link v-if="next" class="button is-github" :to="next.slug"
+      <nuxt-link v-if="next" class="button is-link" :to="next.slug"
         >Next</nuxt-link
       >
     </div>
