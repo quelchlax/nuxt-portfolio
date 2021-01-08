@@ -22,8 +22,8 @@ import marked from "marked";
 export default {
   data() {
     return {
-      content: null,
       article: [],
+      content: null,
       error: null
     };
   },

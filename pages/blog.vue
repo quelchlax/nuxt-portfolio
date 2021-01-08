@@ -27,7 +27,7 @@
             </p>
           </div>
 
-          <div v-for="article in articles" :key="article.id">
+          <div v-for="article in posts" :key="article.id">
             <Columns class="is-vcentered">
               <Column class="is-4">
                 <img
@@ -39,7 +39,7 @@
               <Column class="is-8">
                 <h3 class="heading">Published: {{ article.published }}</h3>
                 <h1 class="title post-title">{{ article.title }}</h1>
-                <p class="post-excerpt">
+                <p>
                   {{ article.snippet }}
                 </p>
                 <br />
@@ -61,22 +61,14 @@
 </template>
 
 <script>
-import {config} from '@/plugins/config'
+import {mapState} from 'vuex';
+
 export default {
-  data() {
-    return {
-      articles: [],
-      error: ""
-    };
+  async fetch(){
+    await this.$store.dispatch('getPosts')
   },
-  async fetch() {
-    try {
-      const { data } = await this.$axios.get(config.link);
-      this.articles = data;
-      this.articles.reverse();
-    } catch (error) {
-      this.error = error;
-    }
+  computed: {
+    ...mapState(['posts'])
   },
   fetchDelay: 100,
   fetchOnServer: false
