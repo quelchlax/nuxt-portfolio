@@ -32,6 +32,7 @@
           >
             Buy Me A Coffee?
           </a>
+        </button>
         <button class="button is-dark">
           <a
             href="https://github.com/quelchlax/quelchlax/blob/main/Resume.pdf"
