@@ -23,7 +23,15 @@
           <span>To view the source code for this portfolio click <a href="https://github.com/quelchlax/quelchlax-nuxt">here</a></span>
         </p>
         <Social />
-        <button class="button is-link">Buy Me A Coffee</button>
+        <button class="button is-link">
+          <a
+            style="color: white;"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.paypal.com/donate?hosted_button_id=U3Z4B6SDYDDSS"
+          >
+            Buy Me A Coffee?
+          </a>
         <button class="button is-dark">
           <a
             href="https://github.com/quelchlax/quelchlax/blob/main/Resume.pdf"
