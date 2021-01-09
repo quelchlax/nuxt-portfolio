@@ -2,7 +2,7 @@ export default {
   target: "universal",
   ssr: true,
   head: {
-    title: "ericquelch.dev",
+    title: "quelchlax.dev",
     titleTemplate: "Eric Quelch - Full Stack Javascript Web Developer",
     htmlAttrs: {
       lang: "en",
@@ -15,7 +15,7 @@ export default {
         content: "width=device-width, initial-scale=1"
       },
       {
-        hid: "ericquelch.dev",
+        hid: "quelchlax.dev",
         name:
           "Eric Quelch - Full Stack Javascript Developer and Web Development Student",
         content:
