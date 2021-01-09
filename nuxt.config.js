@@ -1,6 +1,6 @@
 export default {
-  target: "static",
-  ssr: false,
+  target: "universal",
+  ssr: true,
   head: {
     title: "quelchlax.dev",
     titleTemplate: "Eric Quelch - Full Stack Javascript Web Developer",

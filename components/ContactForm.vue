@@ -1,6 +1,5 @@
 <template>
-  <form name="contact" method="POST" netlify-honeypot='bot-field' class="mt-2">
-    <input type="hidden" name="contact" value="contact">
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot='bot-field' class="mt-2">
    
     <Field label="name" name='Name'>
       <input type="name" name="name" id="name" v-model="name" placeholder="Name" class="input is-primary">
