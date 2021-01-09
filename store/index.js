@@ -1,8 +1,8 @@
-import { config } from "@/plugins/config";
+import { config } from "@/middleware/config";
 
 export const state = () => ({
   posts: [],
-  // post: []
+  post: []
 });
 
 export const actions = {
@@ -13,7 +13,6 @@ export const actions = {
     commit("SET_POSTS", data);
   },
 
-  /* TODO: currently not being used until I figure out how to get markdown content working with marked.js */
   async getPost({ commit },  {id} ) {
     const { data } = await this.$axios.get(
       `${config.link}/${id}`
@@ -27,7 +26,6 @@ export const mutations = {
     state.posts = posts;
   },
 
-  /* TODO: fix marked issue to properly display markdown content */
   SET_POST(state, post) {
     state.post = post;
   }

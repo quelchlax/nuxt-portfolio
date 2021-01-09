@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <article v-if="article" class="hero is-fullheight">
+  <article>
+    <Hero v-if="article" class="is-fullheight">
       <HeroBody class="mt-6 mb-6 mobile">
         <Container class="is-fluid">
           <h1 class="title">{{ post.title }}</h1>
@@ -14,15 +14,15 @@
         <nuxt-link to="/blog" class="button is-danger">Go Back</nuxt-link>
         <a href="#" class="button is-link">Top Of Page</a>
       </div>
-    </article>
-    <div v-else>
-      <section class="hero-body mt-6 mb-6 mobile">
+    </Hero>
+    <section v-else>
+      <HeroBody class="mt-6 mb-6 is-mobile">
         <Container>
           <h2 class="title is-4">{{ error }}</h2>
         </Container>
-      </section>
-    </div>
-  </section>
+      </HeroBody>
+    </section>
+  </article>
 </template>
 
 <script>

@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import {toggler} from "@/middleware/switch";
+import {toggler} from "@/plugins/switch";
 export default {
   name: "Toggler",
   methods: {

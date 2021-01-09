@@ -28,7 +28,13 @@ export default {
 
   loading: { color: "#008776", height: "1px" },
   components: true,
-  modules: ["@nuxtjs/bulma", "@nuxtjs/pwa", "@nuxtjs/axios", "@nuxt/content"],
+  modules: [
+    "@nuxtjs/bulma",
+    "@nuxtjs/dotenv",
+    "@nuxtjs/pwa",
+    "@nuxtjs/axios",
+    "@nuxt/content"
+  ],
   pwa: {
     icon: {
       iconFileName:

@@ -1,5 +1,5 @@
 <template>
-  <Hero class="is-medium">
+  <Hero class="is-fullheight">
     <HeroBody>
       <Container>
         <section v-if="$fetchState.pending">
