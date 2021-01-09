@@ -15,7 +15,7 @@
     <nav class="navbar-menu">
       <aside class="navbar-start">
         <div class="navbar-item" v-for="link in links" :key="link.id">
-          <nuxt-link class="is-link" :to="link.path">{{ link.name }}</nuxt-link>
+          <nuxt-link prefetch class="is-link" :to="link.path">{{ link.name }}</nuxt-link>
         </div>
       </aside>
 
@@ -47,7 +47,7 @@ export default {
         { path: "/contact", name: "Contact" }
       ],
       github: "http://github.com/quelchlax",
-      brand: "Welcome"
+      brand: "Home"
     };
   }
 };

@@ -103,3 +103,11 @@
     }
   }
 }
+
+.nuxt-link-exact-active {
+  color:#008776;
+
+  &:hover {
+    color: #6c44c4;
+  }
+}
