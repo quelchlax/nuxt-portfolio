@@ -35,9 +35,9 @@ export default {
       error: null
     };
   },
-  async fetch() {
+  mounted() {
     try {
-      await this.$store.dispatch("getPost", { id: this.$route.params.id });
+      this.$store.dispatch("getPost", { id: this.$route.params.id });
       return (this.article = marked(this.post.body));
     } catch (error) {
       this.error = error;
