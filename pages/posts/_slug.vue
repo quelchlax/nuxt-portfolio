@@ -17,9 +17,9 @@
 
 <script>
 export default {
-  mounted({ $content, params }) {
-    const doc = $content(`posts/${params.slug}` || "index").fetch();
-    const [prev, next] =  $content("posts")
+  async asyncData({ $content, params }) {
+    const doc = await $content(`posts/${params.slug}` || "index").fetch();
+    const [prev, next] = await $content("posts")
       .only(["title", "slug"])
       .sortBy("title", "asc")
       .surround(params.slug, { before: 1, after: 1 })
